@@ -49,3 +49,4 @@ web/profiles/contrib
 web/core
 web/sites/default/files/
 *.sql.gz
+/.gitattributes

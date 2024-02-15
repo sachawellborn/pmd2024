@@ -1,0 +1,5 @@
+name: 'SW Routes and Controllers'
+type: module
+description: 'Example tutorial on drupal.org for routes and controllers at drupal.org/docs/drupal-apis/routing-system/introductory-drupal-routes-and-controllers-example'
+package: Custom
+core_version_requirement: ^10

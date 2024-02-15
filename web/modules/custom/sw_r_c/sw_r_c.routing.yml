@@ -1,0 +1,16 @@
+sw_r_c.example:
+  path: '/sw-r-c/example'
+  defaults:
+    _title: 'Routes and controllers'
+    _controller: '\Drupal\sw_r_c\Controller\SwRCController'
+  requirements:
+    _permission: 'access content'
+
+sw_r_c.next:
+  path: '/sw-r-c/next'
+  defaults:
+    _title: 'Second route in routing.yml Routes and controllers'
+    _controller: '\Drupal\sw_r_c\Controller\SwRCController'
+  requirements:
+    _permission: 'access content'
+
