@@ -7,8 +7,6 @@ dependencies:
   module:
     - link
     - user
-_core:
-  default_config_hash: g-VeLTCtSO99A39xg-MQZl_UvwZFZJg6WJ6qa_IF0Gw
 id: user.user.field_repository_url
 field_name: field_repository_url
 entity_type: user

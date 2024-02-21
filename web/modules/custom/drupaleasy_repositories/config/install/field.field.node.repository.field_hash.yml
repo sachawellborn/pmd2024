@@ -1,17 +1,15 @@
-uuid: 7792397b-8f52-41ef-921b-bc22f0fd9ccb
+uuid: aa843414-77e1-4769-a94e-f8b96f2f4016
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_source
+    - field.storage.node.field_hash
     - node.type.repository
-_core:
-  default_config_hash: GP71sq5LKj-_01qjErnKGlEH7rn8yl8TC9rzQHeI6OQ
-id: node.repository.field_source
-field_name: field_source
+id: node.repository.field_hash
+field_name: field_hash
 entity_type: node
 bundle: repository
-label: Source
+label: Hash
 description: ''
 required: false
 translatable: false

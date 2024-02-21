@@ -15,6 +15,8 @@ trait RepositoryContentTypeTrait {
 
   /**
    * Creates a repository content type with fields.
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   protected function createRepositoryContentType(): void {
     NodeType::create(['type' => 'repository', 'name' => 'Repository'])->save();

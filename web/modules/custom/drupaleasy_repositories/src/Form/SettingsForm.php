@@ -30,10 +30,12 @@ final class SettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state): array {
+    // Ye the PHP Null Coalescing Operator in case the config doesn't exist yet.
+    $repositories_config = $this->config('drupaleasy_repositories.settings')->get('repositories_plugins') ?? [];
     $form['repositories_plugins'] = [
       '#type' => 'checkboxes',
       '#title' => $this->t('Repository plugins'),
-      '#options' => ['yml_remote' => 'Yml remote'],
+      '#options' => ['yml_remote' => 'Yml remote', 'github' => 'GitHub'],
     ];
 
     return parent::buildForm($form, $form_state);
@@ -44,7 +46,7 @@ final class SettingsForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     $this->config('drupaleasy_repositories.settings')
-      ->set('example', $form_state->getValue('example'))
+      ->set('repositories_plugins', $form_state->getValue('repositories_plugins'))
       ->save();
     parent::submitForm($form, $form_state);
   }

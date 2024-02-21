@@ -14,8 +14,6 @@ dependencies:
     - link
     - path
     - text
-_core:
-  default_config_hash: y3MenQpi-kW3mwp4-Tf07-p277ufNKf_dWcwe_dVUrU
 id: node.repository.default
 targetEntityType: node
 bundle: repository
