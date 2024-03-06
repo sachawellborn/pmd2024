@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Drupal\drupaleasy_repositories\DrupaleasyRepositories;
 
@@ -39,8 +39,9 @@ abstract class DrupaleasyRepositoriesPluginBase extends PluginBase implements Dr
    *   The number of open issues.
    * @param string $url
    *   The uri of the repository.
+   *
    * @return array<string, array<string, string|int>>
-   *   An array containing info about a single repo.
+   *   A consistent array of repo meta data.
    */
   protected function mapToCommonFormat(string $machine_name, string $label, string|null $description, int $num_open_issues, string $url): array {
     $repo_info[$machine_name] = [

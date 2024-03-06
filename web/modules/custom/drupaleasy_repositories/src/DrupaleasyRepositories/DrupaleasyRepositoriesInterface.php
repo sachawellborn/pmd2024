@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace Drupal\drupaleasy_repositories\DrupaleasyRepositories;
 
@@ -17,10 +17,10 @@ interface DrupaleasyRepositoriesInterface extends PluginInspectionInterface {
   public function label(): string;
 
   /**
-   * URL validator
+   * URL validator.
    *
    * @param string $uri
-   *   The URI to validate
+   *   The URI to validate.
    *
    * @return bool
    *   Returns TRUE if the validation passes.
